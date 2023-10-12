@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Justin's Portofolio</title>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <h1>Justin Portofolios</h1>
+            </div>
+            <nav>
+                <div class="hamb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#home" class="scroll-link">Home</a></li>
+                    <li><a href="#skills"class="scroll-link">Skills</a></li>
+                    <li><a href="#project" class="scroll-link">Project</a></li>
+                    <li><a href="#experience"class="scroll-link">Experience</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container" id="home">
+            <div class="content">
+                <h2>Hello there,</h2>
+                <h1> I am <span class="input"></span></h1>
+                <p>I am currently a Computer Science student in my fifth semester at Bina Nusantara University. With a strong passion for technology and a dedication to honing my skills, I am eager to share with you my journey, experiences, and projects that have shaped my educational and professional path.</p>
+                <div class="social">
+                    <a href="https://www.instagram.com/justin_luv17/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/justin-angrendo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JstnAngrendo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:jluvian25@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+            </div>
+            <div class="img-container">
+                <img class="profile"src="./image/Foto Profile Transparan.png" alt="">
+            </div>
+        </div>
+
+    
+        <section class="content-skill" id="skills">
+            <div class="sTitle">
+                <h1>SKILLS</h1>
+            </div>
+            <div class="skill-row">
+                <div class="left">
+                    <img id="displayedImage"src="" alt="">
+                    <h1 id="displayedTitle"></h1>
+                    <p id="displayedText"></p>
+                </div>
+                <div class="right">
+                    <div class="skill-card-item" onmouseover="displayItem(0)">
+                        <img class="img1" src="./image/problem solving.png" alt="">
+                        <h1>Problem Solving</h1>
+                    </div>
+                    <div class="skill-card-item"onmouseover="displayItem(1)">
+                        <img class="img2" src="./image/teamwork.png" alt="">
+                        <h1>Teamwork</h1>
+                    </div>
+                    <div class="skill-card-item"onmouseover="displayItem(2)">
+                        <img class="img3" src="./image/leadership.png" alt="">
+                        <h1>Leadership</h1>
+                    </div>
+                    <div class="skill-card-item" onmouseover="displayItem(3)">
+                        <img class="img4" src="./image/web developer.png" alt="">
+                        <h1>Web Developer</h1>
+                    </div>
+                    <div class="skill-card-item" onmouseover="displayItem(4)">
+                        <img class="img5" src="./image/project-management.png" alt="">
+                        <h1>Project Management</h1>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+        
+        <section class="content-3" id="project">
+            <div class="pTitle">
+                <h1>PROJECTS</h1>
+            </div>
+            <div class="project-row">
+                <div class="project-card">
+                    <h1>Grand City Mall</h1>
+                    <h2>Design a website with a mall theme. Where users can use the website to browse information and store directories in malls</h2>
+                    <div class="lang1">
+                        <h3>html</h3>
+                        <h3>css</h3>
+                        <h3>javascript</h3>
+                    </div>
+                    <a class="git" href="https://github.com/JstnAngrendo/GrandCityMall" target="_blank"><i class="fa-brands fa-github"></i> github</a>
+                </div>
+                <div class="project-card">
+                    <h1>Tanaka Guitar</h1>
+                    <h2>First html project, a website design for online guitar shop where users can search guitar gallery and make membership</h2>
+                    <div class="lang1">
+                        <h3>html</h3>
+                        <h3>css</h3>
+                        <h3>javascript</h3>
+                    </div>
+                    <a class="git" href="https://github.com/JstnAngrendo/Project-Akhir-HCI-LAB" target="_blank"><i class="fa-brands fa-github"></i> github</a>
+                </div>
+                <div class="project-card">
+                    <h1>KpopZtation</h1>
+                    <h2>A back-end development project using asp.net web framework about a kpop artist...</h2>
+                    <!-- and album store where users can add and checkout item of transaction. -->
+                    <div class="lang1">
+                        <h3>javascript</h3>
+                        <h3>c#</h3>
+                        <h3>html</h3>
+                        <h3>css</h3>
+                        <h3>asp.net</h3>
+                    </div>
+                    <a class="git" href="https://github.com/JstnAngrendo" target="_blank"><i class="fa-brands fa-github"></i> github</a>
+                </div>
+                <div class="project-card">
+                    <h1>CC Finder</h1>
+                    <h2>On Progress Website Development</h2>
+                    <div class="lang1">
+                        <h3>Laravel</h3>
+                        <h3>Php</h3>
+                        <h3>Blade</h3>
+                        <h3>Css</h3>
+                    </div>
+                    <a class="git" href=" target="_blank"><i class="fa-brands fa-github"></i> github</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="eTitle">
+                <h1>EXPERIENCES</h1>
+            </div>
+            <div class="timeline">
+                <div class="line"></div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="exp">
+                        <h2>BNCC Activist</h2> <h3> Oct 2021- Sep 2022</h3>
+                        <p>Serving as a member of the Learning and Training Division (LnT) while enhancing and cultivating an organizational mindset. Engage in the Leadership Development Program to further develop both soft and technical skills in the context of BNCC's organizational environment.
+                        </p>
+                        <img src="./image/aktivis.jpg" alt="">
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="exp">
+                        <h2>BNCC Slice Of Data Analyst Life</h2><h3>March 2022 - April 2022</h3>
+                        <p>Member of the event committee for the BNCC Webinar "Slice of Life: Exploring the Data Analyst's Journey.</p>
+                        <img src="./image/Slice Of Life.png" alt="">
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="exp">
+                        <h2>BNCC LnT Staff</h2><h3>Oct 2022 - Sep 2023</h3>
+                        <p>Responsible for managing BNCC Learning and Training Course.PIC of LnT C Programming Course. Train and Mentor BNCC LnT Activist. <br>
+                        Mentoring BNCC Activist in Leadership Development Program
+                        </p>
+                        <img src="./image/Staff LnT.jpg" alt="">
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="exp">
+                        <h2>PIC Mentor & Operator BNCC Uncover Your Skill</h2><h3>April 2023 - May 2023</h3>
+                        <p> Creating Learning Modules of Data Science. Supporting participants throughout the workshop in using tools specific to the workshop's content.
+                        <br>Assisting speakers in operating screens or handling technical aspects in the classroom.
+                        <br>Setting up the workshop room
+                        </p>
+                        <img src="./image/Uncover Your Skill.jpeg" alt="">
+                        <img src="./image/BNCC Uncover Your Skill.png" alt="">
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="exp">
+                        <h2>Mentor Bina Nusantara University</h2><h3>September 2023 - Present</h3>
+                        <p> Assisting mentee who may be facing difficulties in achieving the academic standards set by the university. Organizes mentoring activities by forming study groups and facilitating discussions about the challenges faced by their fellow students
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <footer>
+            <p>@2023 Justin Luvian Angrendo - All Right Reserved.</p>
+        </footer>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</body>
+</html>
