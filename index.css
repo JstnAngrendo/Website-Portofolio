@@ -82,7 +82,7 @@ nav .nav-list li{
 nav .nav-list li a{
     display: inline-block;
     color: var(--primarycolor);
-    margin-right: 5vw;
+    margin-right: 3rem;
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
@@ -128,8 +128,8 @@ span{
 }
 
 .profile{
-    width: 35rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 16.75rem 16.75rem 10rem 10rem;
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
@@ -146,18 +146,18 @@ span{
 .content h2{
     color: var(--primarycolor);
     margin-bottom: 1vw;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 .content h1{
     color: var(--primarycolor);
     margin-bottom: 1vw;
-    font-size: 3.2rem;
+    font-size: 2.3rem;
 }
 .content p{
     color: var(--primarycolor);
     font-weight: 200;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .social a{
     width: 3vw;
@@ -179,11 +179,6 @@ span{
     background-color: var(--thirdcolor);
     transition: .4s;
 }
-
-
-
-
-
 
 
 /* Projects */
@@ -342,18 +337,24 @@ footer p{
         transform:rotate(40deg);
         top: 0;
     }
+    nav{
+        height: 100%;
+        background: black;
+        z-index: 1000;
+    }
     nav .nav-list{
-        position: absolute;
+        position: fixed;
         top: 90px;
         right: -100%;
         bottom: 0;
         width: 100%;
-        height: 50%;
+        height: 40%;
         background: black;
-        z-index: 2;
+        z-index: 1000;
         padding: 6% 9%;
         transition: .3s right;
         border-radius: 10px;
+        text-align: center;
     }
     nav .nav-list li{
         display: block;
@@ -378,7 +379,81 @@ footer p{
     nav .nav-list.open{
         right: 0;
     }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-container{
+        order: -1;
+        margin-top: 4rem;
+        border-radius: 16.75rem;
+    }
+    .profile{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 16.75rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+    .content h2{
+        font-size: 1.3rem;
+    }
+    .content h1{
+        font-size: 1.5rem;
+    }
+    .content p{
+        font-size: 1rem;
+    } 
+
+    .social{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .social a{
+        width: 3rem;
+        height: 3rem;
+    }
+    /* skills */
+
+    .skill-row{
+        flex-direction: column;
+    }
+
+    /* project */
+
+    .project-row{
+        /* padding: 0rem 2rem; */
+        left: 0;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    /* experiences */
+    .timeline{
+        display: flex;
+        flex-direction: column;
+    }
+    .line{
+        display: none;
+    }
+    .section .bead{
+        display: none;
+    }
+    .exp h2,
+    .exp h3{
+        font-size: 1rem;
+    }
+    .section p{
+        font-size: 0.7rem;
+    }
 }
+
 
 /* Skills */
 
@@ -627,4 +702,40 @@ footer p{
 .show-me {
     transform: none;
     opacity: 1;
+}
+
+
+@media(max-width:1200px){
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .header{
+        padding: 2rem 3%;
+    }
+    nav .nav-list li a{
+        display: inline-block;
+        color: var(--primarycolor);
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .profile{
+        width: 25rem;
+        height: 25rem;
+    }
+    .img-container{
+        margin-left: 1.5rem;
+    }
+}
+
+@media(max-width:930px){
+    .section{
+        position: static;
+        width: 100%;
+    }
+    .project-row{
+        grid-template-columns: 1fr;
+    }
 }
