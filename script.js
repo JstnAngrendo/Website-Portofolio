@@ -44,11 +44,11 @@ document.querySelectorAll('.scroll-link').forEach(anchor => {
 // skills
 
 const items = [
-    { image: "/image/problem solving.png", text: "Problem Solving" , details:"Critical Thinking, Analytical Thinking, Decision-making"},
-    { image: "/image/teamwork.png", text: "Teamwork", details: "Collaboration, Delegation, Cooperation" },
-    { image: "/image/leadership.png", text: "Leadership", details: "Motivation, Communication, Integrity" },
-    { image: "/image/web developer.png", text: "Web Developer", details: "HTML, CSS, JavaScript, Front-end, Back-end" },
-    { image: "/image/project-management.png", text: "Project Management", details: "Planning,  Scheduling, Team Management" }
+    { image: "./image/problem solving.png", text: "Problem Solving" , details:"Critical Thinking, Analytical Thinking, Decision-making"},
+    { image: "./image/teamwork.png", text: "Teamwork", details: "Collaboration, Delegation, Cooperation" },
+    { image: "./image/leadership.png", text: "Leadership", details: "Motivation, Communication, Integrity" },
+    { image: "./image/web developer.png", text: "Web Developer", details: "HTML, CSS, JavaScript, Front-end, Back-end" },
+    { image: "./image/project-management.png", text: "Project Management", details: "Planning,  Scheduling, Team Management" }
 ];
 
 let currentIndex = 0;
